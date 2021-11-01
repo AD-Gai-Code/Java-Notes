@@ -1,0 +1,9 @@
+#  1. 表类型（存储引擎）的选择
+
+查看当前的默认存储引擎， 可以使用以下命令：
+
+```mysql
+mysql> show variables like 'table_type';
+```
+
+在创建新表的时候，可以通过增加 `ENGINE` 关键字设置新建表的存储引擎，例如，在下 面的例子中，表 `ai` 就是 `MyISAM` 存储引擎的，而 `country` 表就是 `InnoDB` 存储引擎的：
